@@ -1,5 +1,6 @@
 :root{
    --detail-colors: #aa00ff;
+   --padding: 2.5rem;
 }
 
 body{
@@ -38,16 +39,19 @@ p,h1,h2,h3{
 }
 .intro{
    background-color:#fff;
-   padding: 40px;
+   padding: var(--padding);
    text-align: right;
    position: relative;
+   display: grid;
+   gap: 20px;
+   align-content: center;
+   justify-items: end;
 }
 .red--line{
    width: 60px;
    height: 4px;
    background-color: #e21;
    background-color: var(--detail-colors);
-   display: inline-block;
    position: absolute;
    top: 30px;
    right: -30px;
@@ -59,9 +63,17 @@ p,h1,h2,h3{
    color: #fff;
    padding: 15px 30px;
    border-radius: 4px;
-   display: inline-block;
+   /* display: inline-block; */
    text-transform: uppercase
    ;
+}
+.subtitulo{
+   font-size: 4rem;
+   text-transform: uppercase;
+   color: rgba(0, 0, 0, 0.2);
+   text-align: right;
+   padding: var(--padding);
+   align-self: center;
 }
 P{
    font-size: 1.25rem;
