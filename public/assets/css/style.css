@@ -155,7 +155,17 @@ footer a:hover {
   .red--line {
     display: none;
   }
- 
+  .intro {
+    text-align: start;
+    justify-items: center;
+  }
+  .subtitulo {
+    text-align: center;
+  }
+
+  .vantagens-item img {
+    height: 60px;
+  }
 }
 @media (max-width: 600px) {
   #header-area {
@@ -181,7 +191,7 @@ footer a:hover {
   }
   #nav.active #menu {
     display: block;
-    height: calc( 100vh - 100px);
+    height: calc(100vh - 100px);
     visibility: visible;
     overflow-y: auto;
   }
@@ -236,6 +246,7 @@ footer a:hover {
     transform: rotate(-135deg);
     top: -7px;
   }
+
   footer {
     background-color: var(--detail-colors);
     color: var(--bg-primary-color);
@@ -251,6 +262,11 @@ footer a:hover {
   }
 }
 @media (max-width: 425px) {
+  #menu a {
+    font-size: 1rem;
+    padding: 1rem 5px;
+   
+  }
   .content {
     grid-template-columns: 1fr;
   }
@@ -268,16 +284,17 @@ footer a:hover {
     text-align: center;
     padding: 10px;
   }
-  .vantagens {
+
+  .vantagens-item {
+    grid-template-columns: 1fr;
     padding: 10px;
   }
-  .vantagens-item {
-    display: grid;
-    padding: 10px;
+  .vantagens-item p {
+    grid-column: 1;
   }
 
-  footer {
+  /* footer {
     border: 2px solid green;
     width: 100%;
-  }
+  } */
 }
