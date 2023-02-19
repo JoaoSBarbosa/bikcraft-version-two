@@ -12,4 +12,6 @@
 - Align e Justify
 - Responsividade
 - Variáveis 
+- TypeScript
+- EventListener
 
